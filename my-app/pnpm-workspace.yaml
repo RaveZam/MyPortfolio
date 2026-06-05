@@ -1,6 +1,8 @@
 allowBuilds:
-  sharp: true
-  unrs-resolver: true
+  sharp: set this to true or false
+  unrs-resolver: set this to true or false
+# sharp & unrs-resolver ship prebuilt binaries — no build step needed,
+# so we suppress their postinstall build-script warnings.
 ignoredBuiltDependencies:
   - sharp
   - unrs-resolver
