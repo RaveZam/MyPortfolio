@@ -60,8 +60,13 @@ const css = `
 
 .d4 footer{padding:88px 0 30px;border-top:1px solid var(--line2);margin-top:64px;}
 .d4 footer h3{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(32px,5vw,60px);letter-spacing:-0.025em;line-height:1.05;max-width:15ch;color:var(--ink);}
-.d4 footer a.cta{color:var(--bronze);text-decoration:none;border-bottom:2px solid var(--bronze);}
-.d4 footer .socials{margin-top:40px;display:flex;gap:24px;}
+.d4 footer .reach{margin-top:18px;}
+.d4 footer .contact{margin-top:28px;display:flex;flex-wrap:wrap;gap:14px;}
+.d4 footer a.cta{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.01em;text-decoration:none;padding:13px 20px;border:1px solid var(--line2);border-radius:2px;color:var(--ink);transition:.18s;}
+.d4 footer a.cta:hover{color:var(--bronze);border-color:var(--bronze);}
+.d4 footer a.cta.primary{background:var(--bronze);color:var(--bg);border-color:var(--bronze);}
+.d4 footer a.cta.primary:hover{filter:brightness(1.08);color:var(--bg);}
+.d4 footer .socials{margin-top:44px;display:flex;gap:24px;}
 .d4 footer .socials a{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line2);padding-bottom:3px;transition:.18s;}
 .d4 footer .socials a:hover{color:var(--bronze);border-color:var(--bronze);}
 
@@ -131,11 +136,11 @@ export default function Home() {
           </p>
         </section>
 
-        <div className="ticker">
+        {/* <div className="ticker">
           <div><div className="v">4</div><div className="small k">Live systems</div></div>
           <div><div className="v">4</div><div className="small k">Orgs served</div></div>
           <div><div className="v">700+</div><div className="small k">Users handled live</div></div>
-        </div>
+        </div> */}
 
         <div className="secline">
           <h2>The Live Work</h2>
@@ -165,7 +170,12 @@ export default function Home() {
         ))}
 
         <footer>
-          <h3>Let&rsquo;s build the next one. <a className="cta" href="#">Get in touch &rarr;</a></h3>
+          <h3>Let&rsquo;s build the next one.</h3>
+          <p className="small reach">Quickest way to reach me — message me directly.</p>
+          <div className="contact">
+            <a className="cta primary" href="https://m.me/ravenzamoraa" target="_blank" rel="noopener noreferrer">Message on Messenger &rarr;</a>
+            <a className="cta" href="https://ig.me/m/ravenzamora.dev" target="_blank" rel="noopener noreferrer">DM on Instagram &rarr;</a>
+          </div>
           <nav className="socials">
             {socials.map((s) => (
               <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer">{s.label}</a>
