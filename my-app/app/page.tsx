@@ -127,7 +127,7 @@ export default function Home() {
 
         <section className="hero">
           <div>
-            <div className="small">Student · Builder · Shipping in production</div>
+            <div className="small">Student · Software Developer · Shipping in production</div>
             <h1>Real systems, <span className="accent">depended</span> on every day.</h1>
           </div>
           <p className="lede">

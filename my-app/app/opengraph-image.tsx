@@ -30,7 +30,7 @@ export default function OpengraphImage() {
             fontFamily: "monospace",
           }}
         >
-          Student · Builder · Shipping in production
+          Student · Software Developer · Shipping in production
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 96, fontWeight: 600, lineHeight: 1.05 }}>
